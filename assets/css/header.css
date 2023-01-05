@@ -1,0 +1,43 @@
+
+:root {
+    --color-text-darkblue: #0A3871;
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin-left: 170px;
+
+}
+
+.logo {
+    display: flex;
+    height: 103px;
+    width: 115pX;
+    left: 40pX;
+    top: 30pX;
+
+    margin: 5px;
+}
+
+.title {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 799;
+    font-size: 40px;
+    line-height: 100%;
+
+    color: var(--color-text-darkblue);
+    
+    display: flex;
+    width: 700px;
+    height: 40px;
+    left: -40px;
+    top: 30px;
+    margin-left: 10px;
+
+}

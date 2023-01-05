@@ -1,0 +1,88 @@
+
+.socialMediaContainer {
+    margin-left: -40px;
+}
+
+/* base para o molde e posicionamente dos botões */
+.socialMediaContainer .icon {
+    position:relative;
+    display: inline-block;
+    /* float: left;  */
+    width: 45px;
+    height: 45px;
+    font-size: 30px;
+    margin: 5px;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.2) , -1px 0 2px rgba(0,0,0,.2);
+    overflow: hidden;
+}
+
+/* posicionamento dos botões, e animação de encaixe */
+.socialMediaContainer .icon .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .5s ease-in-out;
+    
+}
+
+/* transformação e aumento de escala do botão quando o mouse passar por cima do mesmo. */
+.socialMediaContainer .icon:hover .fa {
+    transform: translate(-50%, -50%) scale(1.15);
+    color: #fff;
+    cursor: pointer;
+
+}
+
+/* cores dos icones */
+
+.github{
+    color:#171515;
+}
+
+.linkedin {
+    color: #007bb6;
+}
+
+.instagram {
+    color: rgb(228, 64, 95);
+}
+
+/* animação do que acontece quando mouse passar por cima do icone */
+
+.github:before,
+.linkedin:before,
+.instagram:before{
+
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: all .5s ease-in-out;
+
+}
+
+.github:hover:before,
+.linkedin:hover:before,
+.instagram:hover:before{
+    left: 0;
+
+}
+
+/* personalização do fundo de cada botão */
+
+.github:hover:before {
+    background:#171515;
+
+}
+
+.linkedin:hover:before {
+    background: #007bb6;
+}
+
+.instagram:hover:before {
+    background: rgb(228, 64, 95);
+}

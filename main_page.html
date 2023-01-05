@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="assets\imgs\protecao-de-dados.png" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets\font-awesome-4.7.0\css\font-awesome.min.css">    
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/inputText.css">
+    <link rel="stylesheet" href="assets/css/buttonsStyle.css">
+    <link rel="stylesheet" href="assets/css/socialMedia.css">
+    
+    <title>Text Encryption</title>
+
+</head>
+<body>
+    <header>
+        <img class="logo" src="assets\imgs\criptografia.svg" alt="Logo de representação de uma criptografia">
+        <h1 class="title">Text Encryption Specialist</h1>
+    </header>
+
+    <main>
+        <div id="containerInput">
+            <section class="userText" id="userText">
+                <label for="textOrientation">
+                    <p id="textOrientation">Digite seu texto aqui:</p>
+                </label>
+
+                <div id="backgroundText">
+                    <label for="inputText">
+                        <textarea rows="12" type="text" name="inputText" class="inputText" id="inputText" autofocus required></textarea>
+                    </label>
+                </div>
+
+                <!-- icone de exclamação para alertar certas condições para enviar o texto. -->
+                <div class="alert">
+                    <iconify-icon icon="bi:exclamation-circle-fill"></iconify-icon>
+                    <p><span>Apenas letras minúsculas e sem acento.</span></p>
+                </div>
+
+                <div id="buttonsSubmitText">
+                    <button type="submit" class="btnCrypto" id="btnCrypto" onclick="textoCriptografado()">
+                        <span>Criptografar</span>
+                    </button>
+                    <button type="submit" class="btnDecrypto" id="btnDecrypto" onclick="textoDescriptografado()">
+                        <span>Descriptografar</span>
+                    </button>
+                </div>
+
+            </section>
+        </div>
+    
+        <div id="containerResult">
+            <label for="sinalText">
+                <p class="sinalText" id="sinalText">
+                    Seu texto criptografado está aqui:
+                </p>
+            </label>
+
+            <label for="resultText">
+                <p class="resultText" id="resultText">
+                    <textarea name="textBox" rows="12" type="text" class="textBox" id="textBox" readonly>
+                    </textarea>
+                </p>
+            </label>
+            
+            <label for="withoutText">
+                <img class="img_codificação" id="img_codificação" src="assets\imgs\texto_criptografia-upscalling-edit.jpg" alt="Imagem de um homem protegendo seus textos com criptografia.">
+                <p class="withoutText" id="withoutText">
+                    Nenhuma mensagem encontrada
+                </p>
+            </label>
+            
+            <label for="complementText">
+                <p class="complementText" id="complementText">
+                    Digite um texto que você deseja criptografar ou descriptografar.
+                </p>
+            </label>
+            <div>
+                <button type="button" class="btnCopy" id="btnCopy" onclick="Copiar()">
+                    <span>Copiar</span>
+                </button>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="credits">
+            <p>
+               <span>E aí, gostou do site? Prazer, sou Cleiton Nascimento, Desenvolvedor do site: <strong>Text Encryption Specialist.</strong> Faça suas encriptações sem moderação ;). Volte sempre!</span>
+            </p>
+
+            <div class="lineBar"></div>
+
+        </div>
+
+        <div class="followMe">
+            <p>
+                Me siga nas redes!
+            </p>
+        </div>
+
+        <div class="socialMediaContainer">
+            <a class="icon github" target="_blank" rel="noreferrer noopener" href="https://github.com/CleitonOS">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+
+            <a class="icon linkedin" target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/cleiton-nascimento-dev/">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+
+            <a class="icon instagram" target="_blank" rel="noreferrer noopener" href="https://www.instagram.com/cleitonrn7/"> 
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="assets\js\extra.js"></script>
+    <script type="text/javascript" src="assets\js\main.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+</body>
+</html>

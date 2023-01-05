@@ -1,0 +1,362 @@
+
+#buttonsSubmitText {
+    
+    display: flex;
+    flex-direction: row;
+    padding-left: 75px;
+    margin-left: 60px;
+
+    z-index: 0;
+
+}
+
+/* ---CRIPTOGRAFIA BUTTON--- */
+
+.btnCrypto {
+    /* aparencia do button */
+    position: relative;
+    box-sizing: border-box;
+
+    margin-right: 1.0em;
+
+    width: 280px;
+    height: 60px;
+
+    background: white;
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    /* aparencia do texto */
+
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+
+    color: var(--color-text-darkblue);
+
+    /* animação de quando o mouse passa em cima do botão */
+    /*  overflow esconde a animação dentro - z index determina a prioridade dos elementos css (camadas) */
+    overflow: hidden;
+    
+    z-index: 0;
+
+        /* animação de pressionar o botão */
+
+    transition: box-shadow 0.2s ease; transform: 0.2s ease;
+    
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+
+    box-shadow: 1px 1px 0px 0.5px black;
+
+
+}
+
+/*animation ao pressionar  */
+.btnCrypto:active {
+    box-shadow: 0 0 0 0 #000; inset: 2px 2px 2px #000;
+    transform: translate(1px, 1px);
+
+}
+
+.btnCrypto::before {
+
+    content: '';
+    position: absolute;
+    top: var(--y2);
+    Left: var(--x2);
+    transform: translate(-50%, -50%);
+    width: 0px;
+    height: 30px;
+    background: var(--color-text-darkblue);
+    border-radius: 50%;
+
+    transition: width 0.5s, height 0.5s;
+
+    z-index: 0;
+}
+
+.btnCrypto:hover::before {
+    width: 600px;
+    height: 600px;
+    
+}
+
+.btnCrypto span{
+    position: relative;
+    z-index: 1;
+}
+
+/* ANIMAÇÃO TROCA DE COR DO TEXTO */
+
+.btnCrypto:hover {
+
+    color: var(--color-text-darkblue);
+    animation: changeColor 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  
+  
+  @keyframes changeColor {
+    0%   {color: var(--color-text-darkblue);}
+    100% {color: white;}
+  }
+
+  /* ---DESCRIPTOGRAFIA BUTTON--- */
+
+.btnDecrypto {
+    /* aparencia do button */
+    position: relative;
+    box-sizing: border-box;
+
+    margin-left: 1.0em;
+
+    width: 280px;
+    height: 60px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+
+    /*aparencia do texto */
+
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+
+    color: var(--color-text-darkblue);
+
+    /* animação de quando o mouse passa em cima do botão */
+    /*  overflow esconde a animação dentro - z index determina a prioridade dos elementos css (camadas) */
+    overflow: hidden;
+    
+    z-index: 0;
+
+    /* animação de pressionar o botão */
+
+    transition: box-shadow 0.2s ease; transform: 0.2s ease;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+
+    box-shadow: 1px 1px 0px 0.5px black;
+
+}
+
+/*animação ao pressionar  */
+.btnDecrypto:active {
+    box-shadow: 0 0 0 0 #000; inset: 2px 2px 2px #000;
+    transform: translate(1px, 1px);
+
+}
+
+/*o que acontece "depois" com o botão quando o mouse passar por cima, está aqui: */
+.btnDecrypto::before{
+    
+    content: '';
+    position: absolute;
+    top: var(--y);
+    Left: var(--x);
+    transform: translate(-50%, -50%);
+    width: 0px;
+    height: 30px;
+    background: var(--color-text-darkblue);
+    border-radius: 50%;
+
+    transition: width 0.5s, height 0.5s;
+
+    z-index: 0;
+}
+
+/* quando o mouse passa por cima a bolinha passa a ter essas medidas: */
+
+.btnDecrypto:hover::before {
+    width: 600px;
+    height: 600px;
+    
+}
+
+.btnDecrypto span{
+    position: relative;
+    z-index: 1;
+}
+
+/* ANIMAÇÃO TROCA DE COR DO TEXTO */
+
+.btnDecrypto:hover {
+
+    color: var(--color-text-darkblue);
+    animation: changeColor 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  
+  
+  @keyframes changeColor {
+    0%   {color: var(--color-text-darkblue);}
+    100% {color: white;}
+  }
+
+/* preciso trocar a cor do texto para branco para que a animação apareça */
+
+/* ---BUTTON DE COPIAR--- */
+.btnCopy {
+    display: none;
+    
+    position: relative;
+    top: 270px;
+
+    width: 120px;
+    height: 50px;
+
+    background: white;
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    /* aparencia do texto */
+
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+
+    color: var(--color-text-darkblue);
+
+    /* animação de quando o mouse passa em cima do botão */
+    /*  overflow esconde a animação dentro - z index determina a prioridade dos elementos css (camadas) */
+    overflow: hidden;
+    
+    z-index: 0;
+
+    /* animação de pressionar o botão */
+    
+    transition: box-shadow 0.2s ease; transform: 0.2s ease;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+
+    box-shadow: 0px 0.5px 1px 0.5px black;
+
+}
+
+/*animation ao pressionar  */
+.btnCopy:active {
+    box-shadow: 0 0 0 0 #000; inset: 2px 2px 2px #000;
+    transform: translate(1px, 1px);
+
+}
+
+.btnCopy::before{
+    
+    content: '';
+    position: absolute;
+    top: var(--y3);
+    Left: var(--x3);
+    transform: translate(-50%, -50%);
+    width: 0px;
+    height: 30px;
+    background: var(--color-text-darkblue);
+    border-radius: 50%;
+
+    transition: width 0.5s, height 0.5s;
+
+    z-index: 0;
+}
+
+/* quando o mouse passa por cima a bolinha passa a ter essas medidas: */
+
+.btnCopy:hover::before {
+    width: 600px;
+    height: 600px;
+    
+}
+
+/* dando prioridade ao texto em relação ao background, para que se sobreponha o texto branco */
+.btnCopy span{
+    position: relative;
+    z-index: 1;
+}
+
+/* ANIMAÇÃO TROCA DE COR DO TEXTO */
+
+.btnCopy:hover {
+
+    color: var(--color-text-darkblue);
+    animation: changeColor 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  
+  
+  @keyframes changeColor {
+    0%   {color: var(--color-text-darkblue);}
+    100% {color: white;}
+  }
+
+  @media (max-width:1410px) {
+    .btnCopy{
+        position: absolute;
+        top: 89.5em;
+        left: 33.9em;
+
+    }
+}
+
+@media (max-width:768px) {
+    #buttonsSubmitText{
+        padding: 0px;
+        margin: 0px;
+    }
+    .btnCopy{
+        left: 22.8em;
+        top: 89em;
+    }
+}
+
+@media (max-width:426px) {
+    #buttonsSubmitText{
+
+        width: 280px;
+        height: 80px;
+        
+        margin-left: 20px;
+
+    }
+    .btnCrypto{
+        font-size: 10px;
+    }
+    .btnDecrypto{
+        font-size: 10px;
+    }
+    .btnCopy{
+        font-size: 12px;    
+        left: 12.5em;
+        top: 97em;
+    }
+}

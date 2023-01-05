@@ -1,0 +1,430 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root{
+    --background-color: aqua;
+    --color-text-darkblue: #0A3871;
+    --background-color-test: #7FFFD4;
+
+        /* options: lavender #E6E6FA	*/
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background: var(--background-color);
+    overflow-x: hidden;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+#containerResult{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    /* ficar de olho nessas propriedades */
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+
+    margin-top: -100px;
+    margin-right: 2.5em;
+
+    width: 420px;
+    height: 700px;
+
+    /* White */
+    background: #FFFFFF;
+    font-family: Inter, sans-serif;
+
+    /* shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+
+}
+
+.img_codificação {
+    width: 380px;
+    height: 340px;
+    padding: 10px;
+    margin-top: -60px;
+    margin-bottom: 18px;
+
+    z-index: 1;
+}
+
+.withoutText {
+
+    padding-left: 30px;
+    padding-right: 30px;
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    
+    /* or 29px */
+    text-align: center;
+    align-items: center;
+    
+    /* Gray*/
+    color: #343A40;
+
+    width: 400px;
+    height: 60px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+
+    z-index: 1;
+
+}
+
+.complementText {
+
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    
+    /* or 29px */
+    text-align: center;
+    
+    /* Gray*/
+    color: #343A40;
+
+    width: 400px;
+    height: 60px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+
+    z-index: 1;
+    
+}
+
+
+#textBox {
+    position:absolute;
+
+    bottom: 119px;
+    right: 90px;
+
+    margin: auto;
+
+    padding: 8px;
+
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 140%;
+    text-align: center;
+
+    background: transparent;
+    color: var(--color-text-darkblue);
+    resize: none;
+    border: 0 none;
+    
+    width: 16em;
+    height: 22em;
+    
+    outline: none;
+
+    z-index: 0;
+
+}
+
+.resultText {
+
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-size: 1.2em;
+
+    color: var(--color-text-darkblue);
+
+    z-index: 0;
+
+}
+
+.sinalText {
+    
+    display: none;
+
+    position: relative;
+
+    bottom: 16.5em;
+
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.0em;
+    text-align: center;
+    text-transform: uppercase;
+
+    line-height: 0%;
+    background: #FFFFFF;
+    border: 20px solid var(--background-color);
+    border-radius: 20px;
+
+    color: var(--color-text-darkblue);
+}
+
+
+@media(max-width:2561px){
+    main{
+        justify-content:center;
+    }
+
+    header{
+        justify-content: center;
+        margin-right: 28em;
+    }
+    #textBox{
+        bottom: 8em;
+        right: 27.8em;
+    }
+    footer{
+        justify-content: center;
+    }
+    .followMe{
+        padding: 30px;
+        padding-right: 60px;
+    }
+}
+
+@media(max-width:1540px){
+    #textBox{
+        position: absolute;
+        bottom: 5.2em;
+        margin-right: -24em;
+    }
+    .containerInput{
+        margin-right: 2em;
+    }
+}
+
+@media(max-width:1450px) {
+    header{
+        margin-left: 11em;
+
+    }
+    .title{
+        font-size: 36px;
+    }
+    .logo{
+        width: 110px;
+        height: 110px;
+    }
+    .textBox{
+        position: absolute;
+        top: 3em;
+        left: 35em;
+    }
+    .containerInput{
+        margin-right: 0px;
+    }
+}
+
+/* redimensionamento para laptops comuns de 1024px */
+@media(max-width:1025px) {
+    body{
+        max-width: 1024px;
+        min-width: none;
+    }
+
+    #textBox{
+        top: 45em;
+        left: 0em;
+        margin-right: -20em;
+        width: 26em;
+        height: 380px;   
+    }
+    .sinalText{
+        bottom: 14em;
+    }
+
+    .title {
+        font-size: 30px;
+        
+    }
+    #backgroundText {
+        width: 850px;
+        height: 400px;
+        margin: 0;
+        padding: 0;
+    
+    }
+    #containerResult {
+        width: 850px;
+        height: 400px;
+        padding: 10px;
+        margin-top: 0px;
+        margin-left: 100px;
+        margin-bottom: 100px;
+
+    }
+    header{
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .img_codificação {
+        width: 200px;
+        height: 190px;
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .credits{
+        padding: 10px;
+        margin-left: 2px;
+    }
+    .lineBar{
+        margin-left: 5px;
+    }
+    .followMe{
+        margin-right: 25px;
+        padding: 15px;
+        padding-right: 20px;
+    }
+    .containerInput{
+        margin-right: 0px;
+    }   
+
+}
+
+@media(max-width:769px) {
+    header{
+        margin: 0px 100px 0px 10px;
+        margin-left: 6.5em;
+
+    }
+    #containerInput {
+        display: flex;
+      
+        margin-right: 0px;
+        
+    }
+    .btnCrypto {
+        top: 0;
+    }
+    #textBox{
+        width: 540px;
+        height: 380px;
+        left: 8.3em;
+        padding-bottom: 10px;
+    }
+    #containerResult{
+        width: 600px;
+        height: 400px;
+        margin-right: 100px;
+        margin-bottom: 100px;
+    }
+}
+
+@media(max-width:426px) {
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        width: 100%;
+    }
+    header{
+        margin: 0px;
+        margin-left: 0px;
+    }
+    .logo{
+        width: 80px;
+        height: 80px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .containerInput{
+        margin-right: 0px;
+    }
+    #containerResult{
+        width: 320px;
+        height: 380px;
+
+        margin-bottom: 10em;
+        margin-right: 45em;
+        margin-left: 0.5em;
+    }
+    .img_codificação {
+        width: 170px;
+        height: 160px;
+        margin: 0px;
+    }
+    .withoutText {
+        width: 300px;
+        font-size: 16px;
+        padding: 0px;
+        margin-bottom: -2.6em;
+        margin-left: 0em;
+    }
+    .complementText {
+        width: 300px;
+        font-size: 14px;
+    }
+    #textBox{
+        width: 290px;
+        height: 290px;
+
+        left: -4.4em;
+        top: 41.8em;
+    }
+    footer{
+        width: 425px;
+    }
+    .lineBar{
+        height: 200px;
+        margin-right: 20px;
+    }
+    .credits{
+        font-size: 14px;
+        margin-left: -10px;
+    }
+    .followMe{
+        color: black;
+        font-size: 14px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break:normal;
+        display: none;
+    }
+    .socialMediaContainer{
+        padding: 20px;
+    }
+    #sinalText{
+        font-size: 10px;
+    }
+}
