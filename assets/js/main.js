@@ -2,13 +2,11 @@ var botaoCriptografa = document.querySelector("btnCrypto");
 var inputText = document.getElementById("inputText");
 var resultText = document.getElementById("textBox");
 
-var imagem = document.getElementById('img_codificação');
 var textoPrimario = document.getElementById('withoutText');
 var textoSecundario = document.getElementById('complementText');
 
 
 function containerResultVoid() {
-  imagem.style.display="none";
   textoPrimario.style.display="none";
   textoSecundario.style.display="none";
   
