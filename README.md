@@ -7,7 +7,7 @@ Um decodificador de textos, onde é utilizada uma criptografia básica, para pod
 
 ## Sobre o desenvolvimento do projeto
 
-Desenvolvido durante um "desafio" proposto pela ***ONE/Alura*** durante o curso introdutório de programação, onde recebemos um design pelo figma (mas que no caso o design era opcional), e algumas instruções para realização do Challenger/Desafio, como o tipo de CHAVE de criptografia que deverá ser usada e seus requisitos para funcionamento do programa.
+Desenvolvido durante um "desafio" proposto pela ***ONE/Alura*** durante o curso introdutório de programação, onde recebemos um design pelo figma (mas que no caso o design era opcional, mais utilizado como base para o projeto), e algumas instruções para realização do Challenger/Desafio, como o tipo de CHAVE de criptografia que deverá ser usada e seus requisitos para funcionamento do programa.
 
 ### Chaves de criptografia
 - A letra "e" é convertida para "enter".
