@@ -3,8 +3,7 @@
     
     display: flex;
     flex-direction: row;
-    padding-left: 75px;
-    margin-left: 60px;
+    justify-content: center;
 
     z-index: 0;
 
@@ -221,13 +220,12 @@
 /* ---BUTTON DE COPIAR--- */
 .btnCopy {
     display: none;
-    
+
     position: relative;
-    top: 270px;
 
     width: 120px;
     height: 50px;
-
+        
     background: white;
 
     border: 1px solid #0A3871;
@@ -319,44 +317,3 @@
     100% {color: white;}
   }
 
-  @media (max-width:1410px) {
-    .btnCopy{
-        position: absolute;
-        top: 89.5em;
-        left: 33.9em;
-
-    }
-}
-
-@media (max-width:768px) {
-    #buttonsSubmitText{
-        padding: 0px;
-        margin: 0px;
-    }
-    .btnCopy{
-        left: 22.8em;
-        top: 89em;
-    }
-}
-
-@media (max-width:426px) {
-    #buttonsSubmitText{
-
-        width: 280px;
-        height: 80px;
-        
-        margin-left: 20px;
-
-    }
-    .btnCrypto{
-        font-size: 10px;
-    }
-    .btnDecrypto{
-        font-size: 10px;
-    }
-    .btnCopy{
-        font-size: 12px;    
-        left: 12.5em;
-        top: 97em;
-    }
-}

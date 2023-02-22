@@ -25,6 +25,10 @@ function showText(){
   document.getElementById('sinalText').style.display = 'block';
 }
 
+function removeImg(){
+  document.getElementById('textBox').style.backgroundImage = 'none';
+}
+
 function textoCriptografado() {
   let textoDigitado = inputText.value;
   if (/[A-Z-À-Ú-à-ù]/.test(textoDigitado)) {
@@ -43,6 +47,7 @@ function textoCriptografado() {
     containerResultVoid();
     showButton();
     showText();
+    removeImg()
   }
 }
 
@@ -64,6 +69,7 @@ function textoDescriptografado(){
     containerResultVoid();
     showButton();
     showText();
+    removeImg()
   }
 };
 

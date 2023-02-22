@@ -1,39 +1,38 @@
 :root{
     --background-color: aqua;
     --color-text-darkblue: #0A3871;
+    --background-color-test: #7FFFD4;
+
+        /* options: lavender #E6E6FA	*/
 
 }
 
 footer {
+    background-color: white;
     font-family: Inter, sans-serif;
 
-    background-color: white;
-
-    margin-top: 0px;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-around;
-
     gap: 5px;
-    padding: 8px;
+    padding-top: 10px; 
+    margin-top: 5rem;
     border-top: 0.4px solid #FFFFFF;
+    
+}
+
+.container-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 14px 0px;
 }
 
 .credits {
-    display: flex;
-
-    margin-left: 70px;
-
-    width: 880px;
-    height: 80px;
+    width: 50%;
 
     align-items: center;
 
     font-family: Inter, sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     line-height: 130%;
     text-align: center;
@@ -49,16 +48,11 @@ footer {
 }
 
 .lineBar {
-    height: 80px;
+    height: 8rem;
     border-right: 1px solid var(--color-text-darkblue);
-    margin-left: 80px;
-
 }
 
 .followMe {
-    
-    display: flex;
-
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -69,9 +63,36 @@ footer {
     text-decoration: none;
 
     color: black;
+}
 
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    word-break: break-word;
-    
+.credits strong {
+    text-decoration: underline;
+}
+
+.socialMediaContainer {
+    width: 20%;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-icons li{
+    padding: 0 10px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .socialMediaContainer{
+        display:flex;
+        width: 80%;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .footer-icons li{
+        padding: 0 8px;
+    }
 }
