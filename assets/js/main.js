@@ -6,7 +6,7 @@ var textoPrimario = document.getElementById('withoutText');
 var textoSecundario = document.getElementById('complementText');
 
 
-function containerResultVoid() {
+function dontShowText() {
   textoPrimario.style.display="none";
   textoSecundario.style.display="none";
   
@@ -42,7 +42,7 @@ function textoCriptografado() {
 
     resultText.innerHTML = `${txt}`;
 
-    containerResultVoid();
+    dontShowText();
     showButton();
     showText();
     removeImg()
@@ -64,7 +64,7 @@ function textoDescriptografado(){
 
     resultText.innerHTML = `${txt}`;
 
-    containerResultVoid();
+    dontShowText();
     showButton();
     showText();
     removeImg()
