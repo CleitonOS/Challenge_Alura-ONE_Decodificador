@@ -23,5 +23,5 @@ Desenvolvido durante um "desafio" proposto pela ***ONE/Alura*** durante o curso 
 - [X] A página deve ter campos para inserção do texto a ser criptografado ou descriptografado, e a pessoa usuária deve poder escolher entre as duas opções.
 - [X] O resultado deve ser exibido na tela.
 
-###Badge de conclusão do desafio
+### Badge de conclusão do desafio
 <img src="cms_files_10224_1671211139Prancheta_3.png">
