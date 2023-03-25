@@ -24,4 +24,4 @@ Desenvolvido durante um "desafio" proposto pela ***ONE/Alura*** durante o curso 
 - [X] O resultado deve ser exibido na tela.
 
 ### Badge de conclusão do desafio
-<img src="cms_files_10224_1671211139Prancheta_3.png" text-align="center">
+<img src="cms_files_10224_1671211139Prancheta_3.png">
